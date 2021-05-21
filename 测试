@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<!-- 	<div id='wd'>
+	问题</br>
+	<input type='radio' name='a' value='yes'>是</br>
+	<input type='radio' name='a' value='no'>否</br>
+	<input type='submit' name='b' id='b'>
+	</div>
+		<script language="javaScript">
+		if(document.getElementById("b")=="yes")
+		window.alert("you choose yes");
+		</script>
+ -->
+ 
+</body>
+</html>
