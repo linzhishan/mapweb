@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Po')
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'Poppins',sans-serif;
+}
+html,body{
+	height:100%;
+	display:grid;
+	place-items:center;
+    background:#f2f2f2;
+    text-align:center;
+}
+.container{
+	display:flex;
+	align-items: center;
+	iustify-content:space-between;
+}
+.card{
+	/*height:290px;*/
+	width:500px;
+	height:500px;
+	margin:0 20px;
+	background: white;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+}
+.card.img{
+	height:200px;
+	width:100%;
+
+}
+.card.imf img{
+	height:100%;
+	width: 100%;
+	boject-fit:cover;
+}
+.card.top-text{
+	padding: 5px;
+}
+.card.top-text.name{
+	font-size: 25px;
+}
