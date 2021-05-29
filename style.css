@@ -1,43 +1,205 @@
-@import url('https://fonts.googleapis.com/css?family=Po')
-*{
-	margin: 0;
-	padding:0;
-	box-sizing: border-box;
-	font-family:'Poppins',sans-serif;
+#div {
+	width: 600px;
+	margin: 0 auto;
 }
-html,body{
-	height:100%;
-	display:grid;
-	place-items:center;
-    background:#f2f2f2;
-    text-align:center;
-}
-.container{
-	display:flex;
-	align-items: center;
-	iustify-content:space-between;
-}
-.card{
-	/*height:290px;*/
-	width:500px;
-	height:500px;
-	margin:0 20px;
-	background: white;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
-}
-.card.img{
-	height:200px;
-	width:100%;
-
-}
-.card.imf img{
-	height:100%;
+.logo {
+	top: 0;
+	height: 50px;
 	width: 100%;
-	boject-fit:cover;
 }
-.card.top-text{
-	padding: 5px;
+.blue {
+	height: 100%;
+	width: 80%;
+	background-color: #004490;
+	float: left;
 }
-.card.top-text.name{
+.blue img {
+	height: 100%;
+}
+.red {
+	height: 100%;
+	width: 20%;
+	background-color: #004490;
+	float: left;
+}
+.title1 {
+	color: #4682B4;
+	text-align: center;
+	font-size: 66px;
+	letter-spacing: 39px;
+	margin: 30px auto;
+}
+#note {
+	color: #3CB371;
+	text-align: right;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+.title2 {
+	color: #EE82EE;
+	text-align: center;
+	font-size: 35px;
+	letter-spacing: 10px;
+	margin: 20px auto;
+}
+#opera {
+	margin: 40px auto;
+	width: 500px;
+	height: 40px;
+}
+#opera div {
+	float: left;
+	height: 100%;
+	border-radius: 5px;
+	line-height: 40px; text-align: center;
+	width: 150px;  letter-spacing: 15px;
+	background-color: #004490;
+	color: #FFFFFF;
+	border: 2px solid #bd1b0a;
+	margin-left: 73px;
+	cursor: pointer;
+}
+#opera div:hover {
+	background-color: #bd1b0a;
+	border-color: #004490；
+}
+#text {
+	font-size: 38px;
+	font-weight: bold;
+	text-align: center;
+	color: #004490;
+	margin: 20px auto;
+}
+#seat {
+	display: inline-block;
+	font-size: 60px;
+	color: #bd1b0a;
+	width: 80px;
+	height: 66px;
+	text-align: center;
+	line-height: 66px;
+	border-radius: 10px;
+	border: 5px solid #004490;
+		cursor: pointer;
+}
+.lucky {
+	display: none;
+	width: 990px;
+	color: #FFFFFF;
+	margin: auto;
+}
+.lucky div {
+	float: left;
+	width: 300px;
+	height: 40px;
+	border: 3px solid #bd1b0a;
+	background-color: #004490;
+	border-radius: 10px;
+	line-height: 40px;
+	text-align: center;
 	font-size: 25px;
+	letter-spacing: 10px;
+	margin: 10px;
+}
+.lucky div span {
+	float: right;
+	font-size: 50px;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	line-height: 21px;
+	border-radius: 15px;
+	background-color: #bd1b0a;
+	letter-spacing: 0;
+	margin: 5px 10px;
+	cursor: pointer;
+}
+.lucky div span:hover {
+	background-color: #FFFFFF;
+	color: #bd1b0a;
+}
+#clear {
+	display: none;
+	color: both;
+	height: 100%;
+	border-radius: 5px;
+	line-height: 40px;  text-align: center;
+	width: 150px;  letter-spacing: 15px;
+	background-color: #004490;
+	color: #FFFFFF;
+	border: 2px solid #bd1b0a;
+	margin: 150px auto 0;
+}
+#clear:hover {
+	background-color: #bd1b0a;
+	border-color: #004490；
+}
+#music {
+	display: none;
+	width: 50%;
+	height: 50%;
+}
+#card
+{
+	position: fixed;
+	top: -100%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1000;
+	background: aliceblue;
+	width: 300px;
+	height: 250px;
+	padding: 80px 50px 50px;
+	box-shadow: 0 13px 16px rgba(100,100,125,5);
+	transition: 0.5s;
+	visibility: hidden;
+}
+#card.active
+{
+	visibility: visible;
+	top: 50%;
+}
+/*#card.active
+{
+	visibility: hidden;
+	top: -100%;
+}*/
+#card .question
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#card .question h3
+{
+	font-size: 20px;
+	color: #333;
+	margin: 20px 0 10px;
+}
+#card .question .inputbox input
+{
+	width: 100px;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 5px;
+	outline: none;
+	font-size: 18px;
+	font-family: 'Poppins',sans-serif;
+	letter-spacing: 1px;
+}
+#card .question .inputbox input[type="submit"]
+{
+	max-width: 150px;
+	background: skyblue;
+	color: #fff;
+	boder: none;
+}
+#close
+{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
 }
