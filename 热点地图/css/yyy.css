@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:#ffffff ;
+}
+.china-map{
+	position: relative;
+	width: 747px;
+	height: 617px;
+	background: url("../images/map.png")no-repeat center;
+	margin: 60px auto 0;
+}
+.region{
+	position: absolute;
+}
+.region .dot{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+	width: 10px;
+	height: 10px;
+	background: #a2a9b4;
+	border-radius: 50%;
+}
+.region .place{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -33px 0 0 -33px;
+	width: 66px;
+	height: 66px;
+	border: 2px solid #b7b7b7;
+	border-radius: 50%;
+	opacity: .12;
+	box-shadow: 0 0 4px #82878f,0 0 10px #82878f inset;
+	animation: scale 2s ease-out infinite both;
+}
+.region.blue .place{
+	width: 88px;
+	height: 88px;
+	margin: -44px 0 0 -44px;
+	border: 2px solid #009fd9;
+	box-shadow: 0 0 12px #0090d9,0 0 20px #0080d9 inset;
+}
+.region.blue .dot{
+	background: #0080d9;
+}
+.region.orange .place{
+    width: 88px;
+	height: 88px;
+	margin: -44px 0 0 -44px;
+	border: 2px solid #f90;
+	box-shadow: 0 0 12px #f90,0 0 20px #f90 inset;
+}
+.region.orange .dot{
+	background: #f90;
+}
+@keyframes scale {
+    0%{
+    	transform: scale(0);
+    	opacity: 1;
+    }
+    100%{
+    	transform: scale(1);
+    	opacity: 0;
+    }
+}
+.region .place01{
+	animation-delay: .4s;
+}
+.region .place02{
+	animation-delay: .8s;
+}
+.region .place03{
+	animation-delay: 1.2s;
+}
+.region .place04{
+	animation-delay: 1.6s;
+}
+.region .place05{
+	animation-delay: 2s;
+}
+
+.region-bj{                            /*各个城市定点位置*/
+	top: 250px;
+	left: 532px;
+}
+.region-sh{
+	top: 370px;
+	left: 615px;
+}
+.region-cs{
+	top: 425px;
+	left: 505px;
+}
+.region-ls{
+	top: 405px;
+	left: 225px;
+}
+.region-sz{
+	top: 509px;
+	left: 533px;
+}
+.region-hrb{
+	top: 140px;
+	left: 625px;
+}
+.region-yn{
+	top: 480px;
+	left: 370px;
+}
+.region-cd{
+	top: 400px;
+	left: 390px;
+}
+
+
+
+
