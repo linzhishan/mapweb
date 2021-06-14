@@ -10,6 +10,7 @@ window.onload=function(){
 	var isOpera=true;
 	var maxquestion=0;
 	var timer;
+	var num;
 	var a=new Array();//防重复数组
 	for(var i=0;i<10;i++)
 	{
@@ -33,7 +34,7 @@ window.onload=function(){
 			if (maxquestion>=4) 
 				{
 				isOpera=true;
-				window.alert("最多能够选择三道题哦！");
+				window.alert("最多能够选择三道题哦！\n可以点击清空再来");
 				}
 			if (maxquestion<=3)
 			 {
@@ -56,20 +57,69 @@ window.onload=function(){
 			{
 			lucky.style.display = "block";
 			clear.style.display = "block";
+			//document.all("judge").innerHTML=num;
 			var oDivs = document.createElement("div");
-				oDivs.innerHTML = "第" + num + "题<span onclick='deleteDivs(this)'>-<span>";
+				oDivs.innerHTML = "第" + num + "题";
+				//<span onclick='deleteDivs(this)'>-<span>";
 				a[num-1]+=1;		
 				lucky.appendChild(oDivs);
-				oDivs.appendChild(o1);
-				//跳出卡片
+				//oDivs.appendChild(o1);//跳出卡片
 
-				o1.onclick=function cardtoggle()
+				oDivs.onclick=function cardtoggle()
 	            {
-		        const card=document.getElementById('card');
-		        card.classList.toggle('active')
+	            if(num==1)
+	            {
+		        const card1=document.getElementById('card1');
+		        card1.classList.toggle('active')
+		        }
+	           else if(num==2)
+	            {
+		        const card2=document.getElementById('card2');
+		        card2.classList.toggle('active')
+		        }
+	           else if(num==3)
+	            {
+		        const card3=document.getElementById('card3');
+		        card3.classList.toggle('active')
+		        }
+	           else if(num==4)
+	            {
+		        const card4=document.getElementById('card4');
+		        card4.classList.toggle('active')
+		        }
+	           else if(num==5)
+	            {
+		        const card5=document.getElementById('card5');
+		        card5.classList.toggle('active')
+		        }
+	           else if(num==6)
+	            {
+		        const card6=document.getElementById('card6');
+		        card6.classList.toggle('active')
+		        }
+	           else if(num==7)
+	            {
+		        const card7=document.getElementById('card7');
+		        card7.classList.toggle('active')
+		        }
+	           else if(num==8)
+	            {
+		        const card8=document.getElementById('card8');
+		        card8.classList.toggle('active')
+		        }
+	           else if(num==9)
+	            {
+		        const card9=document.getElementById('card9');
+		        card9.classList.toggle('active')
+		        }
+	           else if(num==10)
+	            {
+		        const card10=document.getElementById('card10');
+		        card10.classList.toggle('active')
+		        }
+		        
+		    }
 	            }
-
-			}
 			else
 			{
 				window.alert("该题目已选择过，请再次点击开始");
@@ -132,4 +182,8 @@ window.onload=function(){
 		return Math.floor(Math.random() * (upper - lower)) + lower;
 	}
 
+
 }
+
+
+

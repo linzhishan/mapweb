@@ -63,6 +63,30 @@
 	background-color: #bd1b0a;
 	border-color: #004490；
 }
+
+#back
+{
+	margin: 40px auto;
+	width: 500px;
+	height: 40px;
+	float: right;
+	height: 100%;
+	border-radius: 5px;
+	line-height: 40px; text-align: center;
+	width: 150px;  letter-spacing: 15px;
+	background-color: #004490;
+	color: #FFFFFF;
+	border: 2px solid #bd1b0a;
+	margin-left: 73px;
+	cursor: pointer;
+	position: relative;
+	right: 100px;
+	bottom: -400px;
+}
+#back:hover {
+	background-color: #bd1b0a;
+	border-color: #004490；
+}
 #text {
 	font-size: 38px;
 	font-weight: bold;
@@ -100,8 +124,9 @@
 	font-size: 25px;
 	letter-spacing: 10px;
 	margin: 10px;
+	cursor: pointer;
 }
-.lucky div span {
+/*.lucky div span {
 	float: right;
 	font-size: 50px;
 	display: inline-block;
@@ -117,7 +142,7 @@
 .lucky div span:hover {
 	background-color: #FFFFFF;
 	color: #bd1b0a;
-}
+}*/
 #clear {
 	display: none;
 	color: both;
@@ -139,7 +164,7 @@
 	width: 50%;
 	height: 50%;
 }
-#card
+#card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10
 {
 	position: fixed;
 	top: -100%;
@@ -148,13 +173,58 @@
 	z-index: 1000;
 	background: aliceblue;
 	width: 300px;
-	height: 250px;
+	height: 400px;
 	padding: 80px 50px 50px;
 	box-shadow: 0 13px 16px rgba(100,100,125,5);
 	transition: 0.5s;
 	visibility: hidden;
 }
-#card.active
+#card1.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card2.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card3.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card4.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card5.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card6.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card7.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card8.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card9.active
+{
+	visibility: visible;
+	top: 50%;
+}
+#card10.active
 {
 	visibility: visible;
 	top: 50%;
@@ -164,7 +234,7 @@
 	visibility: hidden;
 	top: -100%;
 }*/
-#card .question
+#card1 .question,#card2 .question,#card3 .question,#card4 .question,#card5 .question,#card6 .question,#card7 .question ,#card8 .question ,#card9 .question ,#card10 .question 
 {
 	position: relative;
 	width: 100%;
@@ -173,13 +243,13 @@
 	align-items: center;
 	flex-direction: column;
 }
-#card .question h3
+#card1 .question h3,#card2 .question h3,#card3 .question h3,#card4 .question h3,#card5 .question h3,#card6 .question h3,#card7 .question h3,#card8 .question h3,#card9 .question h3,#card10 .question h3
 {
 	font-size: 20px;
 	color: #333;
 	margin: 20px 0 10px;
 }
-#card .question .inputbox input
+#card1 .question .inputbox input,#card2 .question .inputbox input,#card3 .question .inputbox input,#card4 .question .inputbox input,#card5 .question .inputbox input,#card6 .question .inputbox input,#card7 .question .inputbox input,#card8 .question .inputbox input,#card9 .question .inputbox input,#card10 .question .inputbox input
 {
 	width: 100px;
 	border: 1px solid rgba(0,0,0,0.2);
@@ -189,12 +259,13 @@
 	font-family: 'Poppins',sans-serif;
 	letter-spacing: 1px;
 }
-#card .question .inputbox input[type="submit"]
+#card1 .question .inputbox input[type="button"],#card2 .question .inputbox input[type="button"],#card3 .question .inputbox input[type="button"],#card4 .question .inputbox input[type="button"],#card5 .question .inputbox input[type="button"],#card6 .question .inputbox input[type="button"],#card7 .question .inputbox input[type="button"],#card8 .question .inputbox input[type="button"],#card9 .question .inputbox input[type="button"],#card10 .question .inputbox input[type="button"]
 {
 	max-width: 150px;
 	background: skyblue;
 	color: #fff;
 	boder: none;
+	cursor: pointer;
 }
 #close
 {

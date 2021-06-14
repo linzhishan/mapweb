@@ -28,12 +28,12 @@
 	<!-- 问题 -->
 	<div id="card1">
 		<div class="question">
-			<h3>1、北京市树是什么？(多选）</h3>
+			<h3>1、哈尔滨于（）年解放，成为了中国解放最早的大城市。（单选）</h3>
 		<div class="cb">
-			<input type="checkbox" name="tree"  value="国槐">国槐<br>
-			<input type="checkbox" name="tree" value="侧柏">侧柏<br>
-			<input type="checkbox" name="tree" value="杨树">杨树<br>
-			<input type="checkbox" name="tree" value="桑树" >桑树<br>
+			<input type="radio" name="tree"  value="1945年">1945年<br>
+			<input type="radio" name="tree" value="1946年">1946年<br>
+			<input type="radio" name="tree" value="1947年">1947年<br>
+			<input type="radio" name="tree" value="1944年" >1944年<br>
 		</div>
 
 		<br>
@@ -44,23 +44,15 @@
 		<script type="text/javascript">
 			function judge()
 			{
-				var b=new Array();
-				var i=0;
 				var j=0;
-				b[0]=1;
-				b[1]=1;
-				b[2]=0;
-				b[3]=0;
-				obc=document.getElementsByName("tree");
-				check_val=[];
+				var k=1;
+				obc=document.getElementsByName("2");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && (b[j]==1))
-						i++;
-					else if(obc[j].checked && (b[j]==0))
-						i--;
+					if(obc[j].checked && j==1)
+						k=0;
 				}
-				if(i==2)alert("回答正确");
+				if(k==0)alert("回答正确");
 				else alert("回答错误");
 
 			}
@@ -79,12 +71,12 @@
 
 	<div id="card2">
 		<div class="question">
-			<h3>2、与北京市接壤的省、市是（）（单选）</h3>
+			<h3>2、以下哪位运动员是土生土长的哈尔滨人？（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="2"  value="河北省、辽宁省">河北省、辽宁省<br>
-			<input type="radio" name="2" value="河北省、天津市">河北省、天津市<br>
-			<input type="radio" name="2" value="天津市、河南省">天津市、河南省<br>
-			<input type="radio" name="2" value="河北省、山东省" >河北省、山东省<br>
+			<input type="radio" name="2"  value="杨扬">杨扬<br>
+			<input type="radio" name="2" value="曹磊">曹磊<br>
+			<input type="radio" name="2" value="韩晓鹏">韩晓鹏<br>
+			<input type="radio" name="2" value="孔令辉" >孔令辉<br>
 		</div>
 
 		<br>
@@ -100,7 +92,7 @@
 				obc=document.getElementsByName("2");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==1)
+					if(obc[j].checked && j==0)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -120,12 +112,12 @@
 
 	<div id="card3">
 		<div class="question">
-			<h3>3、北京的气候是四季分明的，那么北京的气候是属于（）（单选）</h3>
+			<h3>3、以下哪个体育馆不是2009年第24届世界大学生冬季运动会的比赛场地？（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="3"  value="亚热带季风气候">亚热带季风气候<br>
-			<input type="radio" name="3" value="温带季风气候">温带季风气候<br>
-			<input type="radio" name="3" value="亚热带湿润气候">亚热带湿润气候<br>
-			<input type="radio" name="3" value="温带大陆性气候" >温带大陆性气候<br>
+			<input type="radio" name="3"  value="哈尔滨理工大学体育馆">哈尔滨理工大学体育馆<br>
+			<input type="radio" name="3" value="哈尔滨国际会展体育中心体育馆">哈尔滨国际会展体育中心体育馆<br>
+			<input type="radio" name="3" value="黑龙江大学体育馆">黑龙江大学体育馆<br>
+			<input type="radio" name="3" value="哈尔滨体育学院滑冰馆" >哈尔滨体育学院滑冰馆<br>
 		</div>
 
 		<br>
@@ -141,7 +133,7 @@
 				obc=document.getElementsByName("3");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==1)
+					if(obc[j].checked && j==2)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -161,12 +153,12 @@
 
 	<div id="card4">
 		<div class="question">
-			<h3>4、北京是块人杰地灵的“宝地”，历史上有很多朝代在北京建都，请选出正确的朝代（）（单选）</h3>
+			<h3>4、以下哪个不是哈尔滨城市的别称？（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="4"  value="辽、金、元、明、清 ">辽、金、元、明、清 <br>
-			<input type="radio" name="4" value="唐、宋、元、明、清 ">唐、宋、元、明、清 <br>
-			<input type="radio" name="4" value="西周、辽、金、元、明">西周、辽、金、元、明<br>
-			<input type="radio" name="4" value="隋、唐、宋、元、明" >隋、唐、宋、元、明<br>
+			<input type="radio" name="4"  value="鹤城 ">鹤城 <br>
+			<input type="radio" name="4" value="北国冰城 ">北国冰城 <br>
+			<input type="radio" name="4" value="东方莫斯科">东方莫斯科<br>
+			<input type="radio" name="4" value="天鹅向下的珍珠" >天鹅向下的珍珠<br>
 		</div>
 
 		<br>
@@ -202,12 +194,13 @@
 
 		<div id="card5">
 		<div class="question">
-			<h3>5、资料显示“北京是中共中央、全国人大会和国务院所在地。全国政协、最高人民法院、最高人民检察院也驻在北京。中央和国务院各部委、各人民团体的中央机构都在北京办公。与我国建立了外交关系的各个国家，都在北京设立了驻华使馆等机构”据此说明北京的职能之一是（）（单选）</h3>
+			<h3>5、哈尔滨的城市精神是（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="5"  value="全国的文化中心">全国的文化中心<br>
-			<input type="radio" name="5" value="全国的经济中心">全国的经济中心<br>
-			<input type="radio" name="5" value="全国的政治中心">全国的政治中心<br>
-			<input type="radio" name="5" value="全国的军事中心" >全国的军事中心<br>
+			<input type="checkbox" name="5"  value="开放包容">开放包容<br>
+			<input type="checkbox" name="5" value="时尚活力">时尚活力<br>
+			<input type="checkbox" name="5" value="宽容大气">宽容大气<br>
+			<input type="checkbox" name="5" value="城市敬业" >城市敬业<br>
+			<input type="checkbox" name="5" value="和谐奋进" >和谐奋进<br>
 		</div>
 
 		<br>
@@ -217,16 +210,23 @@
 
 	<script type="text/javascript">
 			function judge5()
-			{
+			{var b=new Array();
+				var i=0;
 				var j=0;
-				var k=1;
+				b[0]=1;
+				b[1]=1;
+				b[2]=0;
+				b[3]=1;
+				b[4]=1;
 				obc=document.getElementsByName("5");
-				for(j=0;j<4;j++)
+				for(j=0;j<5;j++)
 				{
-					if(obc[j].checked && j==2)
-						k=0;
+					if(obc[j].checked && (b[j]==1))
+						i++;
+					else if(obc[j].checked && (b[j]==0))
+						i--;
 				}
-				if(k==0)alert("回答正确");
+				if(i==4)alert("回答正确");
 				else alert("回答错误");
 			}
 		</script>
@@ -243,12 +243,12 @@
 
 	<div id="card6">
 		<div class="question">
-			<h3>6、在新时期时代，北京就曾经有人类居住和生活的痕迹，考古专家在北京发现了著名的“北京人”，请说出发现“北京人”的地点是（）（单选）</h3>
+			<h3>6、以下哪一个不是哈尔滨的特色美食（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="6"  value="门头沟">门头沟<br>
-			<input type="radio" name="6" value="房山">房山<br>
-			<input type="radio" name="6" value="延庆">延庆<br>
-			<input type="radio" name="6" value="平谷">平谷<br>
+			<input type="radio" name="6"  value="鸡蛋卷">鸡蛋卷<br>
+			<input type="radio" name="6" value="马迭尔冰棍">马迭尔冰棍<br>
+			<input type="radio" name="6" value="老鼎丰糕点">老鼎丰糕点<br>
+			<input type="radio" name="6" value="亚沟粘豆包">亚沟粘豆包<br>
 		</div>
 
 		<br>
@@ -264,7 +264,7 @@
 				obc=document.getElementsByName("6");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==1)
+					if(obc[j].checked && j==0)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -285,12 +285,12 @@
 
 		<div id="card7">
 		<div class="question">
-			<h3>7、“不到长城非好汉”，老祖宗给我们留下了一个令世人敬仰感叹的奇迹，——八达岭长城，它是位于（）（单选）</h3>
+			<h3>7、哈尔滨的市花是（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="7"  value="太行山余脉">太行山余脉<br>
-			<input type="radio" name="7" value="燕山山脉">燕山山脉<br>
-			<input type="radio" name="7" value="阴山山脉">阴山山脉<br>
-			<input type="radio" name="7" value="吕梁山脉">吕梁山脉<br>
+			<input type="radio" name="7"  value="百合">百合<br>
+			<input type="radio" name="7" value="丁香花">丁香花<br>
+			<input type="radio" name="7" value="冰山雪莲">冰山雪莲<br>
+			<input type="radio" name="7" value="梨花">梨花<br>
 		</div>
 
 		<br>
@@ -326,12 +326,12 @@
 
 			<div id="card8">
 		<div class="question">
-			<h3>8、在明清时代，北京民间艺术的展示和表演比较集中的地区在（）（单选）</h3>
+			<h3>8、以下哪所大学不在哈尔滨？（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="8"  value="天桥">天桥<br>
-			<input type="radio" name="8" value="前门">前门<br>
-			<input type="radio" name="8" value="厂甸">厂甸<br>
-			<input type="radio" name="8" value="地坛">地坛<br>
+			<input type="radio" name="8"  value="黑龙江大学">黑龙江大学<br>
+			<input type="radio" name="8" value="东北林业大学">东北林业大学<br>
+			<input type="radio" name="8" value="东北农业大学">东北农业大学<br>
+			<input type="radio" name="8" value="东北大学">东北大学<br>
 		</div>
 
 		<br>
@@ -347,7 +347,7 @@
 				obc=document.getElementsByName("8");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==0)
+					if(obc[j].checked && j==3)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -367,12 +367,12 @@
 
 	<div id="card9">
 		<div class="question">
-			<h3>9、以下哪一个不是北京的特色美食（）（单选）</h3>
+			<h3>9、以下哪个景点不在哈尔滨？（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="9"  value="炸酱面">炸酱面<br>
-			<input type="radio" name="9" value="烤鸭">烤鸭<br>
-			<input type="radio" name="9" value="炒肝儿">炒肝儿<br>
-			<input type="radio" name="9" value="油泼面">油泼面<br>
+			<input type="radio" name="9"  value="中央大街">中央大街<br>
+			<input type="radio" name="9" value="圣亚海洋世界">圣亚海洋世界<br>
+			<input type="radio" name="9" value="圣索菲亚大教堂">圣索菲亚大教堂<br>
+			<input type="radio" name="9" value="防洪纪念馆">防洪纪念馆<br>
 		</div>
 
 		<br>
@@ -388,7 +388,7 @@
 				obc=document.getElementsByName("9");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==3)
+					if(obc[j].checked && j==1)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -408,12 +408,12 @@
 
 		<div id="card10">
 		<div class="question">
-			<h3>10、以下哪一所高校不在北京（）（单选）</h3>
+			<h3>10、和黑龙江相邻的省份（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="10"  value="中国传媒大学">中国传媒大学<br>
-			<input type="radio" name="10" value="华北电力大学">华北电力大学<br>
-			<input type="radio" name="10" value="中国民航大学">中国民航大学<br>
-			<input type="radio" name="10" value="对外经济贸易大学">对外经济贸易大学<br>
+			<input type="radio" name="10"  value="辽宁省">辽宁省<br>
+			<input type="radio" name="10" value="吉林省">吉林省<br>
+			<input type="radio" name="10" value="山东省">山东省<br>
+			<input type="radio" name="10" value="天津市">天津市<br>
 		</div>
 
 		<br>
@@ -429,7 +429,7 @@
 				obc=document.getElementsByName("10");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==2)
+					if(obc[j].checked && j==1)
 						k=0;
 				}
 				if(k==0)alert("回答正确");

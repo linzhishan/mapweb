@@ -28,12 +28,12 @@
 	<!-- 问题 -->
 	<div id="card1">
 		<div class="question">
-			<h3>1、北京市树是什么？(多选）</h3>
+			<h3>1、上海的简称是什么？(多选）</h3>
 		<div class="cb">
-			<input type="checkbox" name="tree"  value="国槐">国槐<br>
-			<input type="checkbox" name="tree" value="侧柏">侧柏<br>
-			<input type="checkbox" name="tree" value="杨树">杨树<br>
-			<input type="checkbox" name="tree" value="桑树" >桑树<br>
+			<input type="checkbox" name="tree"  value="沪">沪<br>
+			<input type="checkbox" name="tree" value="申">申<br>
+			<input type="checkbox" name="tree" value="闵">闵<br>
+			<input type="checkbox" name="tree" value="滇" >滇<br>
 		</div>
 
 		<br>
@@ -52,7 +52,6 @@
 				b[2]=0;
 				b[3]=0;
 				obc=document.getElementsByName("tree");
-				check_val=[];
 				for(j=0;j<4;j++)
 				{
 					if(obc[j].checked && (b[j]==1))
@@ -79,12 +78,12 @@
 
 	<div id="card2">
 		<div class="question">
-			<h3>2、与北京市接壤的省、市是（）（单选）</h3>
+			<h3>2、上海共有多少个区（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="2"  value="河北省、辽宁省">河北省、辽宁省<br>
-			<input type="radio" name="2" value="河北省、天津市">河北省、天津市<br>
-			<input type="radio" name="2" value="天津市、河南省">天津市、河南省<br>
-			<input type="radio" name="2" value="河北省、山东省" >河北省、山东省<br>
+			<input type="radio" name="2"  value="17">17个<br>
+			<input type="radio" name="2" value="16">16个<br>
+			<input type="radio" name="2" value="15">15个<br>
+			<input type="radio" name="2" value="14" >14个<br>
 		</div>
 
 		<br>
@@ -120,12 +119,12 @@
 
 	<div id="card3">
 		<div class="question">
-			<h3>3、北京的气候是四季分明的，那么北京的气候是属于（）（单选）</h3>
+			<h3>3、上海的市花是什么？（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="3"  value="亚热带季风气候">亚热带季风气候<br>
-			<input type="radio" name="3" value="温带季风气候">温带季风气候<br>
-			<input type="radio" name="3" value="亚热带湿润气候">亚热带湿润气候<br>
-			<input type="radio" name="3" value="温带大陆性气候" >温带大陆性气候<br>
+			<input type="radio" name="3"  value="栀子花">栀子花<br>
+			<input type="radio" name="3" value="郁金香">郁金香<br>
+			<input type="radio" name="3" value="白玉兰">白玉兰<br>
+			<input type="radio" name="3" value="牡丹花" >牡丹花<br>
 		</div>
 
 		<br>
@@ -141,7 +140,7 @@
 				obc=document.getElementsByName("3");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==1)
+					if(obc[j].checked && j==2)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -161,12 +160,12 @@
 
 	<div id="card4">
 		<div class="question">
-			<h3>4、北京是块人杰地灵的“宝地”，历史上有很多朝代在北京建都，请选出正确的朝代（）（单选）</h3>
+			<h3>4、上海最高的山叫什么？（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="4"  value="辽、金、元、明、清 ">辽、金、元、明、清 <br>
-			<input type="radio" name="4" value="唐、宋、元、明、清 ">唐、宋、元、明、清 <br>
-			<input type="radio" name="4" value="西周、辽、金、元、明">西周、辽、金、元、明<br>
-			<input type="radio" name="4" value="隋、唐、宋、元、明" >隋、唐、宋、元、明<br>
+			<input type="radio" name="4"  value="长白山">长白山 <br>
+			<input type="radio" name="4" value="武陵山 ">武陵山 <br>
+			<input type="radio" name="4" value="雁荡山">雁荡山<br>
+			<input type="radio" name="4" value="佘山" >佘山<br>
 		</div>
 
 		<br>
@@ -182,7 +181,7 @@
 				obc=document.getElementsByName("4");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==0)
+					if(obc[j].checked && j==3)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -202,12 +201,12 @@
 
 		<div id="card5">
 		<div class="question">
-			<h3>5、资料显示“北京是中共中央、全国人大会和国务院所在地。全国政协、最高人民法院、最高人民检察院也驻在北京。中央和国务院各部委、各人民团体的中央机构都在北京办公。与我国建立了外交关系的各个国家，都在北京设立了驻华使馆等机构”据此说明北京的职能之一是（）（单选）</h3>
+			<h3>5、1921年7月，（）在上海召开，中国共产党正式成立。（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="5"  value="全国的文化中心">全国的文化中心<br>
-			<input type="radio" name="5" value="全国的经济中心">全国的经济中心<br>
-			<input type="radio" name="5" value="全国的政治中心">全国的政治中心<br>
-			<input type="radio" name="5" value="全国的军事中心" >全国的军事中心<br>
+			<input type="radio" name="5"  value="中共一大">中共一大<br>
+			<input type="radio" name="5" value="第一届人民代表大会">第一届人民代表大会<br>
+			<input type="radio" name="5" value="中共中央政治局会议">中共中央政治局会议<br>
+			<input type="radio" name="5" value="国民党二大" >国民党二大<br>
 		</div>
 
 		<br>
@@ -223,7 +222,7 @@
 				obc=document.getElementsByName("5");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==2)
+					if(obc[j].checked && j==0)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -243,12 +242,12 @@
 
 	<div id="card6">
 		<div class="question">
-			<h3>6、在新时期时代，北京就曾经有人类居住和生活的痕迹，考古专家在北京发现了著名的“北京人”，请说出发现“北京人”的地点是（）（单选）</h3>
+			<h3>6、上海有哪3个岛屿？（）（多选）</h3>
 		<div class="cb">
-			<input type="radio" name="6"  value="门头沟">门头沟<br>
-			<input type="radio" name="6" value="房山">房山<br>
-			<input type="radio" name="6" value="延庆">延庆<br>
-			<input type="radio" name="6" value="平谷">平谷<br>
+			<input type="checkbox" name="6"  value="崇明岛">崇明岛<br>
+			<input type="checkbox" name="6" value="南麂岛">南麂岛<br>
+			<input type="checkbox" name="6" value="长兴岛">长兴岛<br>
+			<input type="checkbox" name="6" value="横沙岛">横沙岛<br>
 		</div>
 
 		<br>
@@ -259,16 +258,24 @@
 	<script type="text/javascript">
 			function judge6()
 			{
+				var b=new Array();
+				var i=0;
 				var j=0;
-				var k=1;
-				obc=document.getElementsByName("6");
+				b[0]=1;
+				b[1]=0;
+				b[2]=1;
+				b[3]=1;
+				obc=document.getElementsByName("tree");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==1)
-						k=0;
+					if(obc[j].checked && (b[j]==1))
+						i++;
+					else if(obc[j].checked && (b[j]==0))
+						i--;
 				}
-				if(k==0)alert("回答正确");
+				if(i==3)alert("回答正确");
 				else alert("回答错误");
+
 			}
 		</script>
 	</div>
@@ -285,12 +292,12 @@
 
 		<div id="card7">
 		<div class="question">
-			<h3>7、“不到长城非好汉”，老祖宗给我们留下了一个令世人敬仰感叹的奇迹，——八达岭长城，它是位于（）（单选）</h3>
+			<h3>7、“上海是中国的（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="7"  value="太行山余脉">太行山余脉<br>
-			<input type="radio" name="7" value="燕山山脉">燕山山脉<br>
-			<input type="radio" name="7" value="阴山山脉">阴山山脉<br>
-			<input type="radio" name="7" value="吕梁山脉">吕梁山脉<br>
+			<input type="radio" name="7" value="政治中心">政治中心<br>
+			<input type="radio" name="7" value="文化中心">文化中心<br>
+			<input type="radio" name="7" value="经济中心">经济中心<br>
+			<input type="radio" name="7" value="商业中心">商业中心<br>
 		</div>
 
 		<br>
@@ -306,7 +313,7 @@
 				obc=document.getElementsByName("7");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==1)
+					if(obc[j].checked && j==2)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -326,12 +333,12 @@
 
 			<div id="card8">
 		<div class="question">
-			<h3>8、在明清时代，北京民间艺术的展示和表演比较集中的地区在（）（单选）</h3>
+			<h3>8、一方水土养一方人，上海人将（）当作是上海的母亲河？（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="8"  value="天桥">天桥<br>
-			<input type="radio" name="8" value="前门">前门<br>
-			<input type="radio" name="8" value="厂甸">厂甸<br>
-			<input type="radio" name="8" value="地坛">地坛<br>
+			<input type="radio" name="8"  value="长江">长江<br>
+			<input type="radio" name="8" value="瓯江">瓯江<br>
+			<input type="radio" name="8" value="钱塘江">钱塘江<br>
+			<input type="radio" name="8" value="黄浦江">黄浦江<br>
 		</div>
 
 		<br>
@@ -347,7 +354,7 @@
 				obc=document.getElementsByName("8");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==0)
+					if(obc[j].checked && j==3)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -367,12 +374,12 @@
 
 	<div id="card9">
 		<div class="question">
-			<h3>9、以下哪一个不是北京的特色美食（）（单选）</h3>
+			<h3>9、以下哪一个不是上海的特色美食（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="9"  value="炸酱面">炸酱面<br>
-			<input type="radio" name="9" value="烤鸭">烤鸭<br>
-			<input type="radio" name="9" value="炒肝儿">炒肝儿<br>
-			<input type="radio" name="9" value="油泼面">油泼面<br>
+			<input type="radio" name="9"  value="生煎包">生煎包<br>
+			<input type="radio" name="9" value="荠菜肉混沌">荠菜肉混沌<br>
+			<input type="radio" name="9" value="杂粮煎饼">杂粮煎饼<br>
+			<input type="radio" name="9" value="叶榭软糕">叶榭软糕<br>
 		</div>
 
 		<br>
@@ -388,7 +395,7 @@
 				obc=document.getElementsByName("9");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==3)
+					if(obc[j].checked && j==2)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
@@ -408,12 +415,12 @@
 
 		<div id="card10">
 		<div class="question">
-			<h3>10、以下哪一所高校不在北京（）（单选）</h3>
+			<h3>10、以下哪一所高校不在上海（）（单选）</h3>
 		<div class="cb">
-			<input type="radio" name="10"  value="中国传媒大学">中国传媒大学<br>
-			<input type="radio" name="10" value="华北电力大学">华北电力大学<br>
-			<input type="radio" name="10" value="中国民航大学">中国民航大学<br>
-			<input type="radio" name="10" value="对外经济贸易大学">对外经济贸易大学<br>
+			<input type="radio" name="10" value="同济大学">同济大学<br>
+			<input type="radio" name="10" value="华东理工大学">华东理工大学<br>
+			<input type="radio" name="10" value="华东师范大学">华东师范大学<br>
+			<input type="radio" name="10" value="东南大学">东南大学<br>
 		</div>
 
 		<br>
@@ -429,7 +436,7 @@
 				obc=document.getElementsByName("10");
 				for(j=0;j<4;j++)
 				{
-					if(obc[j].checked && j==2)
+					if(obc[j].checked && j==3)
 						k=0;
 				}
 				if(k==0)alert("回答正确");
