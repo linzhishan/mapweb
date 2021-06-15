@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>拉萨</title>
+	<!-- <link rel="icon" type="image/x-icon" href="img/img.icon"/> -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index.js"></script>
+</head>
+
+<body>
+	<div class="logo">
+		<div class="blue"><img src="img/img.png"></div>
+		<<div class="red" id="red">
+			<audio id="music" src="music/2381646767.mp3" controls loop></audio>
+		</div>
+	</div>
+
+    <div>
+        <p id="note">点击上方 color-X伴你放松心情</p>
+	    <div class="title1">&nbsp;知识小问答
+	    </div>
+	</div>
+	    
+	<div class="title2">&nbsp;快来抽取你的专属题目吧~</br>抽取了下一个题目就不可以查看上一个题目了哦</div>
+
+	<!-- 问题 -->
+	<div id="card1">
+		<div class="question">
+			<h3>1、拉萨位于西藏高原的（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="tree"  value="中部">中部<br>
+			<input type="radio" name="tree" value="东部">东部<br>
+			<input type="radio" name="tree" value="北部">北部<br>
+			<input type="radio" name="tree" value="南部" >南部<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge()">
+		</div>
+
+		<script type="text/javascript">
+			function judge()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("2");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==0)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+
+			}
+		</script>
+
+	    </div>
+			<a id="close" onclick="cardtoggle1();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle1()
+				{
+					const card1=document.getElementById('card1');
+					card1.classList.toggle('active')
+				}
+			</script>
+	</div>
+
+	<div id="card2">
+		<div class="question">
+			<h3>2、拉萨位于喜马拉雅山脉的（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="2"  value="中侧">中侧<br>
+			<input type="radio" name="2" value="东侧">东侧<br>
+			<input type="radio" name="2" value="北侧">北侧<br>
+			<input type="radio" name="2" value="南侧" >南侧<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge2()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge2()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("2");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==2)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+	<a id="close" onclick="cardtoggle2();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle2()
+				{
+					const card2=document.getElementById('card2');
+					card2.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card3">
+		<div class="question">
+			<h3>3、拉萨全年（）多，（）少（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="3"  value="晴天，雨天">晴天，雨天<br>
+			<input type="radio" name="3" value="雨天，晴天">雨天，晴天<br>
+			<input type="radio" name="3" value="大风，晴天">大风，晴天<br>
+			<input type="radio" name="3" value="大风，雨天" >大风，雨天<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge3()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge3()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("3");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==0)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+	<a id="close" onclick="cardtoggle3();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle3()
+				{
+					const card3=document.getElementById('card3');
+					card3.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card4">
+		<div class="question">
+			<h3>4、全年日照时间在（）小时以上，素有“日光城”的美誉。（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="4"  value="1000 ">1000 <br>
+			<input type="radio" name="4" value="2000 ">2000 <br>
+			<input type="radio" name="4" value="3000">3000<br>
+			<input type="radio" name="4" value="4000" >4000<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge4()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge4()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("4");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==2)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle4();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle4()
+				{
+					const card4=document.getElementById('card4');
+					card4.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+		<div id="card5">
+		<div class="question">
+			<h3>5、拉萨境内相对于全国和自治区其他地市，具有较明显的（）优势。（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="5"  value="人口">人口<br>
+			<input type="radio" name="5" value="经济">经济<br>
+			<input type="radio" name="5" value="资源">资源<br>
+			<input type="radio" name="5" value="对外交流" >对外交流<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge5()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge5()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("5");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==2)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle5();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle5()
+				{
+					const card5=document.getElementById('card5');
+					card5.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card6">
+		<div class="question">
+			<h3>6、作为首批中国历史文化名城，拉萨以风光秀丽、历史悠久、风俗民情独特、宗教色彩浓厚而闻名于世，下列哪个不是拉萨的荣誉称号（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="6"  value="中国优秀旅游城市">中国优秀旅游城市<br>
+			<input type="radio" name="6" value="中国最具安全感城市">中国最具安全感城市<br>
+			<input type="radio" name="6" value="欧洲游客最喜爱的旅游城市">欧洲游客最喜爱的旅游城市<br>
+			<input type="radio" name="6" value="中国海拔最高的城市">中国海拔最高的城市<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge6()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge6()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("6");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==3)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle6();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle6()
+				{
+					const card6=document.getElementById('card6');
+					card6.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+
+		<div id="card7">
+		<div class="question">
+			<h3>7、拉萨的市花是（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="7"  value="冰山雪莲">冰山雪莲<br>
+			<input type="radio" name="7" value="牡丹花">牡丹花<br>
+			<input type="radio" name="7" value="格桑花">格桑花<br>
+			<input type="radio" name="7" value="凤尾鸡冠">凤尾鸡冠<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge7()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge7()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("7");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==2)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle7();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle7()
+				{
+					const card7=document.getElementById('card7');
+					card7.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+			<div id="card8">
+		<div class="question">
+			<h3>8、以下不是拉萨著名景点的是（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="8"  value="布达拉宫">布达拉宫<br>
+			<input type="radio" name="8" value="罗布林卡">罗布林卡<br>
+			<input type="radio" name="8" value="大昭寺">大昭寺<br>
+			<input type="radio" name="8" value="喀纳斯">喀纳斯<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge8()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge8()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("8");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==3)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle8();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle8()
+				{
+					const card8=document.getElementById('card8');
+					card8.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card9">
+		<div class="question">
+			<h3>9、（）年正式设立拉萨市。（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="9"  value="1956">1956<br>
+			<input type="radio" name="9" value="1960">1960<br>
+			<input type="radio" name="9" value="1964">1964<br>
+			<input type="radio" name="9" value="1978">1978<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge9()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge9()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("9");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==1)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+	<a id="close" onclick="cardtoggle9();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle9()
+				{
+					const card9=document.getElementById('card9');
+					card9.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+		<div id="card10">
+		<div class="question">
+			<h3>10、以下哪一个不是拉萨的美食（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="10"  value="美味酸奶">美味酸奶<br>
+			<input type="radio" name="10" value="青稞酒">青稞酒<br>
+			<input type="radio" name="10" value="大盘鸡">大盘鸡<br>
+			<input type="radio" name="10" value="酥油茶">酥油茶<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge10()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge10()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("10");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==2)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+			<a id="close" onclick="cardtoggle10();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle10()
+				{
+					const card10=document.getElementById('card10');
+					card10.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+			<a href="地图.html"><div id="back">&nbsp;返回首页</div></a>
+	<div id="div">
+		<div id="text">
+			第 <span id="seat">00</span>&nbsp;题
+		</div>
+		<div id="opera">
+			<div id="start">&nbsp;开始</div>
+			<div id="reset">&nbsp;重置</div>
+		</div>
+	</div>
+
+	<div class="lucky" id="lucky"></div>
+	<div id="clear">&nbsp;清空再来</div>
+	<script type="text/javascript">
+		function deleteDivs(Obj)
+		{
+			Obj.parentNode.parentNode.removeChild(Obj.parentNode);
+			let div1=document.getElementById("lucky");
+			let div2=document.getElementById("clear");
+			let str=div1.innerHTML;
+			if (str.indexOf("<div>") < 0) {
+				div1.style.display ="none";
+				div2.style.display ="none";
+			}
+
+		}
+	</script>
+</body>
+</html>

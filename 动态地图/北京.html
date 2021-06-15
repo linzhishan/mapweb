@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>北京</title>
+	<!-- <link rel="icon" type="image/x-icon" href="img/img.icon"/> -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index.js"></script>
+</head>
+
+<body>
+	<div class="logo">
+		<div class="blue"><img src="img/img.png"></div>
+		<<div class="red" id="red">
+			<audio id="music" src="music/2381646767.mp3" controls loop></audio>
+		</div>
+	</div>
+
+    <div>
+        <p id="note">点击上方 color-X伴你放松心情</p>
+	    <div class="title1">&nbsp;知识小问答
+	    </div>
+	</div>
+	    
+	<div class="title2">&nbsp;快来抽取你的专属题目吧~</br>抽取了下一个题目就不可以查看上一个题目了哦</div>
+
+	<!-- 问题 -->
+	<div id="card1">
+		<div class="question">
+			<h3>1、北京市树是什么？(多选）</h3>
+		<div class="cb">
+			<input type="checkbox" name="tree"  value="国槐">国槐<br>
+			<input type="checkbox" name="tree" value="侧柏">侧柏<br>
+			<input type="checkbox" name="tree" value="杨树">杨树<br>
+			<input type="checkbox" name="tree" value="桑树" >桑树<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge()">
+		</div>
+
+		<script type="text/javascript">
+			function judge()
+			{
+				var b=new Array();
+				var i=0;
+				var j=0;
+				b[0]=1;
+				b[1]=1;
+				b[2]=0;
+				b[3]=0;
+				obc=document.getElementsByName("tree");
+				check_val=[];
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && (b[j]==1))
+						i++;
+					else if(obc[j].checked && (b[j]==0))
+						i--;
+				}
+				if(i==2)alert("回答正确");
+				else alert("回答错误");
+
+			}
+		</script>
+
+	    </div>
+			<a id="close" onclick="cardtoggle1();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle1()
+				{
+					const card1=document.getElementById('card1');
+					card1.classList.toggle('active')
+				}
+			</script>
+	</div>
+
+	<div id="card2">
+		<div class="question">
+			<h3>2、与北京市接壤的省、市是（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="2"  value="河北省、辽宁省">河北省、辽宁省<br>
+			<input type="radio" name="2" value="河北省、天津市">河北省、天津市<br>
+			<input type="radio" name="2" value="天津市、河南省">天津市、河南省<br>
+			<input type="radio" name="2" value="河北省、山东省" >河北省、山东省<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge2()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge2()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("2");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==1)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+	<a id="close" onclick="cardtoggle2();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle2()
+				{
+					const card2=document.getElementById('card2');
+					card2.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card3">
+		<div class="question">
+			<h3>3、北京的气候是四季分明的，那么北京的气候是属于（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="3"  value="亚热带季风气候">亚热带季风气候<br>
+			<input type="radio" name="3" value="温带季风气候">温带季风气候<br>
+			<input type="radio" name="3" value="亚热带湿润气候">亚热带湿润气候<br>
+			<input type="radio" name="3" value="温带大陆性气候" >温带大陆性气候<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge3()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge3()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("3");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==1)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+	<a id="close" onclick="cardtoggle3();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle3()
+				{
+					const card3=document.getElementById('card3');
+					card3.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card4">
+		<div class="question">
+			<h3>4、北京是块人杰地灵的“宝地”，历史上有很多朝代在北京建都，请选出正确的朝代（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="4"  value="辽、金、元、明、清 ">辽、金、元、明、清 <br>
+			<input type="radio" name="4" value="唐、宋、元、明、清 ">唐、宋、元、明、清 <br>
+			<input type="radio" name="4" value="西周、辽、金、元、明">西周、辽、金、元、明<br>
+			<input type="radio" name="4" value="隋、唐、宋、元、明" >隋、唐、宋、元、明<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge4()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge4()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("4");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==0)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle4();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle4()
+				{
+					const card4=document.getElementById('card4');
+					card4.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+		<div id="card5">
+		<div class="question">
+			<h3>5、资料显示“北京是中共中央、全国人大会和国务院所在地。全国政协、最高人民法院、最高人民检察院也驻在北京。中央和国务院各部委、各人民团体的中央机构都在北京办公。与我国建立了外交关系的各个国家，都在北京设立了驻华使馆等机构”据此说明北京的职能之一是（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="5"  value="全国的文化中心">全国的文化中心<br>
+			<input type="radio" name="5" value="全国的经济中心">全国的经济中心<br>
+			<input type="radio" name="5" value="全国的政治中心">全国的政治中心<br>
+			<input type="radio" name="5" value="全国的军事中心" >全国的军事中心<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge5()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge5()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("5");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==2)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle5();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle5()
+				{
+					const card5=document.getElementById('card5');
+					card5.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card6">
+		<div class="question">
+			<h3>6、在新时期时代，北京就曾经有人类居住和生活的痕迹，考古专家在北京发现了著名的“北京人”，请说出发现“北京人”的地点是（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="6"  value="门头沟">门头沟<br>
+			<input type="radio" name="6" value="房山">房山<br>
+			<input type="radio" name="6" value="延庆">延庆<br>
+			<input type="radio" name="6" value="平谷">平谷<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge6()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge6()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("6");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==1)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle6();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle6()
+				{
+					const card6=document.getElementById('card6');
+					card6.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+
+		<div id="card7">
+		<div class="question">
+			<h3>7、“不到长城非好汉”，老祖宗给我们留下了一个令世人敬仰感叹的奇迹，——八达岭长城，它是位于（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="7"  value="太行山余脉">太行山余脉<br>
+			<input type="radio" name="7" value="燕山山脉">燕山山脉<br>
+			<input type="radio" name="7" value="阴山山脉">阴山山脉<br>
+			<input type="radio" name="7" value="吕梁山脉">吕梁山脉<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge7()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge7()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("7");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==1)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle7();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle7()
+				{
+					const card7=document.getElementById('card7');
+					card7.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+			<div id="card8">
+		<div class="question">
+			<h3>8、在明清时代，北京民间艺术的展示和表演比较集中的地区在（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="8"  value="天桥">天桥<br>
+			<input type="radio" name="8" value="前门">前门<br>
+			<input type="radio" name="8" value="厂甸">厂甸<br>
+			<input type="radio" name="8" value="地坛">地坛<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge8()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge8()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("8");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==0)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+<a id="close" onclick="cardtoggle8();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle8()
+				{
+					const card8=document.getElementById('card8');
+					card8.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+	<div id="card9">
+		<div class="question">
+			<h3>9、以下哪一个不是北京的特色美食（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="9"  value="炸酱面">炸酱面<br>
+			<input type="radio" name="9" value="烤鸭">烤鸭<br>
+			<input type="radio" name="9" value="炒肝儿">炒肝儿<br>
+			<input type="radio" name="9" value="油泼面">油泼面<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge9()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge9()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("9");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==3)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+	<a id="close" onclick="cardtoggle9();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle9()
+				{
+					const card9=document.getElementById('card9');
+					card9.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+		<div id="card10">
+		<div class="question">
+			<h3>10、以下哪一所高校不在北京（）（单选）</h3>
+		<div class="cb">
+			<input type="radio" name="10"  value="中国传媒大学">中国传媒大学<br>
+			<input type="radio" name="10" value="华北电力大学">华北电力大学<br>
+			<input type="radio" name="10" value="中国民航大学">中国民航大学<br>
+			<input type="radio" name="10" value="对外经济贸易大学">对外经济贸易大学<br>
+		</div>
+
+		<br>
+		<div class="inputbox">
+			<input type="button" value="提交" name="btn" onclick="judge10()">
+		</div> 
+
+	<script type="text/javascript">
+			function judge10()
+			{
+				var j=0;
+				var k=1;
+				obc=document.getElementsByName("10");
+				for(j=0;j<4;j++)
+				{
+					if(obc[j].checked && j==2)
+						k=0;
+				}
+				if(k==0)alert("回答正确");
+				else alert("回答错误");
+			}
+		</script>
+	</div>
+			<a id="close" onclick="cardtoggle10();"><img src="img/3.png"></a>
+			<script>
+				function cardtoggle10()
+				{
+					const card10=document.getElementById('card10');
+					card10.classList.toggle('active')
+				}
+			</script>
+		</div>
+
+			<a href="地图.html"><div id="back">&nbsp;返回首页</div></a>
+	<div id="div">
+		<div id="text">
+			第 <span id="seat">00</span>&nbsp;题
+		</div>
+		<div id="opera">
+			<div id="start">&nbsp;开始</div>
+			<div id="reset">&nbsp;重置</div>
+		</div>
+	</div>
+
+	<div class="lucky" id="lucky"></div>
+	<div id="clear">&nbsp;清空再来</div>
+	<script type="text/javascript">
+		function deleteDivs(Obj)
+		{
+			Obj.parentNode.parentNode.removeChild(Obj.parentNode);
+			let div1=document.getElementById("lucky");
+			let div2=document.getElementById("clear");
+			let str=div1.innerHTML;
+			if (str.indexOf("<div>") < 0) {
+				div1.style.display ="none";
+				div2.style.display ="none";
+			}
+
+		}
+	</script>
+</body>
+</html>
